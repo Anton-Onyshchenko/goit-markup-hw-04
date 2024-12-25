@@ -394,3 +394,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 footer .social-contacts-list{
     gap: 16px;
 }
+
+footer .social-contacts-list:hover, footer .social-contacts-list:focus {
+    background-color: #31d0aa;
+}
