@@ -102,11 +102,13 @@ img{
 .social-contacts-list{
     display: flex;
     justify-content: space-between;
+    gap:16px;
 }
 
 .social-contacts-item{
     width: 40px;
     height: 40px;
+
 }
 
 .social-contacts-link{
@@ -121,7 +123,7 @@ img{
 }
 
 
-.social-contacts-link:hover, .social-contacts-linl:focus{
+.social-contacts-link:hover, .social-contacts-link:focus{
     background-color: #31D0AA;
 }
 
@@ -135,6 +137,7 @@ img{
 
 .web-site-header{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-flex{
@@ -169,12 +172,31 @@ img{
 .web-site-logo-header{
     color:#2e2f42;
 }
+
 .web-site-menu-link{
     font-weight: 500;
     color:#2e2f42;
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.first-menu-link {
+    position: relative;
+}
+
+.first-menu-link::after{
+    color: #404bbf;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:-1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+}
+
+
 .web-site-menu-link:hover, .web-site-menu-link:focus{
     color: #404bbf;
 }
@@ -262,11 +284,6 @@ img{
     border: 1px solid #8e8f99;
 }
 
-.features-icon{
-    width: 64px;
-    height:64px;
-    fill: black;
-}
 
 /* Our Team section styles */
 .our-team-section{
@@ -290,8 +307,7 @@ img{
 }
 
 .portfolio-list-item{
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover,.portfolio-list-item:focus {
@@ -305,13 +321,13 @@ img{
 .image-text{
     position: absolute;
     top:0;
-    padding: 40px 32px 0;
+    padding: 40px 32px;
     color:#F4F4FD;
     background-color: #4d5ae5;
     height: 100%;
     width:100%;
     transform: translateY(100%);
-    transition: transform cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-description{
@@ -357,9 +373,6 @@ img{
     width: 208px;
 }
 
-.footer-social-item{
-    gap: 16px;
-}
 
 .social-container-title{
     font-weight: 500;
